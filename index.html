@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário de Inscrição</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <form action="">
+      <label for="">Nome</label>
+      <input type="text" id="nome" name="nome" required />
+      <label for="">CEP</label>
+      <input type="text" id="cep" name="CEP" onblur="submitCep()" required />
+      <label for="">Telefone</label>
+      <input type="text" id="telefone" name="telefone" required />
+      <label for="">Endereço</label>
+      <input type="text" id="endereco" name="endereco" disabled/>
+      <label for="">Bairro</label>
+      <input type="text" id="bairro" name="bairro" disabled/>
+      <label for="">Cidade</label>
+      <input type="text" id="cidade" name="cidade" disabled/>
+      <!-- Seleção de cursos -->
+      <label for="">Cursos profissionalizantes</label>
+      <select name="cursos" id="cursos">
+        <option></option>
+        <option value="curso1">Informática Básica</option>
+        <option value="curso2">Multimidia</option>
+        <option value="curso3">Eletrotécnica</option>
+        <option value="curso4">Desenvolvimento de Sistemas</option></select
+      ><br />
+      <!-- Gênero Radio Button -->
+      <label for="">Sexo</label>
+      <div class="selecao">
+        <input
+          type="radio"
+          id="masculino"
+          name="sexo"
+          value="masculino"
+        />
+        <label for="">Masculino</label>
+        <input
+          type="radio"
+          id="feminino"
+          name="sexo"
+          value="feminino"
+        />
+        <label for="">Feminino</label><br />
+      </div>
+      <!-- Adicionar caixas de seleção -->
+      <label for="">Unidades Operacionais</label>
+      <div class="selecao">
+        <input type="checkbox" id="cetcc" name="cursos" value="CETCC" />
+        <label for="cetcc">CETCC</label>
+        <input type="checkbox" id="cetafaju" name="cursos" value="CETAFAJU" />
+        <label for="cetafaju">CETAFAJU</label>
+        <input type="checkbox" id="cetafest" name="cursos" value="CETAFEST" />
+        <label for="cetafest">CETAFEST</label>
+        <input type="checkbox" id="ceticc" name="cursos" value="CETICC" />
+        <label for="ceticc">CETICC</label>
+      </div>
+      <br>
+      <button>Enviar</button>
+    </form>
+  </body>
+</html>
